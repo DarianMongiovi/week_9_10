@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 url_wildlife_areas = "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDIFW_WildlifeManagementAreas/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson"
 gdf_wildlife_areas = gpd.read_file(url_wildlife_areas)
 
-path_state_boundaries = r"C:\Users\jaspd\OneDrive\Desktop\KMLs\Maine.kml"
-path_county_boundaries = r"C:\Users\jaspd\OneDrive\Desktop\KMLs\cb_2023_23_cousub_500k.kml"
+path_state_boundaries = r"/week_9_10/Maine.kml"
+path_county_boundaries = r"/week_9_10/cb_2023_23_cousub_500k.kml"
 
 gdf_states = gpd.read_file(path_state_boundaries)
 gdf_counties = gpd.read_file(path_county_boundaries)
