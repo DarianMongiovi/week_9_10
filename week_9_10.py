@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 url_deer_wintering_areas = "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDIFW_DeerWinteringAreas/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson"
 gdf_deer_wintering = gpd.read_file(url_deer_wintering_areas)
 
-path_state_boundaries = r"/cpt_127_week_9_10/Maine.kml"
-path_county_boundaries = r"/cpt_127_week_9_10/cb_2023_23_cousub_500k.kml"
+path_state_boundaries = r"/week_9_10/Maine.kml"
+path_county_boundaries = r"/week_9_10/cb_2023_23_cousub_500k.kml"
 
 gdf_states = gpd.read_file(path_state_boundaries)
 gdf_counties = gpd.read_file(path_county_boundaries)
